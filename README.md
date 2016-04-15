@@ -1,16 +1,17 @@
-# Timestamp Microservice
+# Request Headers Microservice
 
-This timestamp microservice takes a unix timestamp or a human readable timestamp (in the format MMM DD, YYYY - although it'll do its best to convert whatever you throw at it), and return a simple JSON object that looks like this:
+This microservice returns the user's language, IP address, and OS version. The returned object looks like:
 
 ```javascript
 {
-    'unix': 1234567890,
-    'natural': 'April 15, 2016'
+    'ipaddress': '192.168.0.1',
+    'language': 'en-GB',
+    'software': 'Windows NT 6.1'
 }
 ```
 
-Use this API by appending either `/<unix-time-stamp>` or `/<month-name> <date>, <year>` to the root path.
+Use this API by simply accessing the root path.
 
-It runs on Node and Express, and requires queryString to parse natural, human readable dates passed to it.
+It runs on Node and Express, and has no other dependencies.
 
 This software is released under the ☺ licence by Visual Idiot.

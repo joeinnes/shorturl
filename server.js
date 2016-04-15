@@ -1,7 +1,6 @@
 'use strict';
 
 var express = require('express');
-const queryString = require('query-string');
 
 var app = express();
 
