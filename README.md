@@ -1,17 +1,16 @@
-# Request Headers Microservice
+# Short URL
 
-This microservice returns the user's language, IP address, and OS version. The returned object looks like:
+This microservice creates a short URL when passed a url to the /new endpoint, or redirects the user in case they access the short url created.
+
+The urls are stored in a Mongo database. When created, you will receive a response like this:
 
 ```javascript
 {
-    'ipaddress': '192.168.0.1',
-    'language': 'en-GB',
-    'software': 'Windows NT 6.1'
+  "original_url":"http://foo.com:80",
+  "short_url":"https://little-url.herokuapp.com/8170"
 }
 ```
 
-Use this API by simply accessing the root path.
-
-It runs on Node and Express, and has no other dependencies.
+It runs on Node and Express, and depends on the .
 
 This software is released under the ☺ licence by Visual Idiot.
