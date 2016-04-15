@@ -1,6 +1,6 @@
 # Short URL
 
-This microservice creates a short URL when passed a url to the /new endpoint, or redirects the user in case they access the short url created.
+This microservice creates a short URL when passed a url to the `/new` endpoint, or redirects the user in case they access the short url created.
 
 The urls are stored in a Mongo database. When created, you will receive a response like this:
 
@@ -11,6 +11,6 @@ The urls are stored in a Mongo database. When created, you will receive a respon
 }
 ```
 
-It runs on Node and Express, and depends on the .
+It runs on Node and Express, and depends on the short ID library.
 
 This software is released under the ☺ licence by Visual Idiot.

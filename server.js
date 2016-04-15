@@ -52,7 +52,6 @@ app.get('*', function (req, res) {
 		let collection = db.collection('links');
 		collection.findOne({'ident': val}, function (err, result) {
 			var redirectTo;
-			console.log(result);
 			if (result) {
 				if (result['original_url'].substring(0, 3) !== 'http') {
 					redirectTo = 'http://' + result['original_url'];
