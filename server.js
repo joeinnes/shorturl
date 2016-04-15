@@ -6,7 +6,15 @@ const queryString = require('query-string');
 var app = express();
 
 app.get('*', function (req, res) {
-	console.log(req.headers);
+	let ip = req.headers['x-forwarded-for'];
+	let lang = req.headers['accept-language'].split(',')[0];
+	let os = req.headers['user-agent'].split('(')[1].split(')')[0];
+	let headers = {
+		ipaddress: ip,
+		language: lang,
+		software: os
+	}
+	res.send(headers);
 	res.end();
 });
 
