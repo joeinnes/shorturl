@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Short URL by joeinnes</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Short URL</h1>
+        <p>Short URL generator</p>
+
+        <p class="view"><a href="https://github.com/joeinnes/shorturl">View the Project on GitHub <small>joeinnes/shorturl</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/joeinnes/shorturl/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/joeinnes/shorturl/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/joeinnes/shorturl">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <p>This microservice creates a short URL when passed a url to the <code>/new</code> endpoint, or redirects the user in case they access the short url created.</p>
+
+<p>The urls are stored in a Mongo database. When created, you will receive a response like this:</p>
+
+<div class="highlight highlight-source-js"><pre>{
+  <span class="pl-s"><span class="pl-pds">"</span>original_url<span class="pl-pds">"</span></span><span class="pl-k">:</span><span class="pl-s"><span class="pl-pds">"</span>http://foo.com:80<span class="pl-pds">"</span></span>,
+  <span class="pl-s"><span class="pl-pds">"</span>short_url<span class="pl-pds">"</span></span><span class="pl-k">:</span><span class="pl-s"><span class="pl-pds">"</span>https://little-url.herokuapp.com/8170<span class="pl-pds">"</span></span>
+}</pre></div>
+
+<p>It runs on Node and Express, and depends on the short ID library.</p>
+
+<p>This software is released under the ☺ licence by Visual Idiot.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/joeinnes">joeinnes</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "name": "Short URL",
+  "tagline": "Short URL generator",
+  "body": "This microservice creates a short URL when passed a url to the `/new` endpoint, or redirects the user in case they access the short url created.\r\n\r\nThe urls are stored in a Mongo database. When created, you will receive a response like this:\r\n\r\n```javascript\r\n{\r\n  \"original_url\":\"http://foo.com:80\",\r\n  \"short_url\":\"https://little-url.herokuapp.com/8170\"\r\n}\r\n```\r\n\r\nIt runs on Node and Express, and depends on the short ID library.\r\n\r\nThis software is released under the ☺ licence by Visual Idiot.",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
